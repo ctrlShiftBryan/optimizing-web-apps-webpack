@@ -18,6 +18,9 @@
     "webpack-dev-server": "^2.9.3"
   },
   "scripts": {
+    "build": "webpack app/app.js app/dist/app.bundle.js",
+    "chart": "webpack app/app.js app/dist/app.bundle.js --json > stats.json; npx webpack-stats-graph --show-size",
+    "watch": "webpack --watch app/app.js app/dist/app.bundle.js",
     "postinstall": "node node_modules/bower/bin/bower install",
     "prestart": "npm install",
     "start": "http-server -c-1 -o",
