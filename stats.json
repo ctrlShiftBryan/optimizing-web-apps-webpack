@@ -1,9 +1,13 @@
+
+> solitaire@ build /Users/barendt/code/optimizing-web-apps-webpack
+> webpack app/app.js app/dist/app.bundle.js "--json"
+
 {
   "errors": [],
   "warnings": [],
   "version": "3.11.0",
   "hash": "c7e378415477430f4975",
-  "time": 72,
+  "time": 97,
   "publicPath": "",
   "assetsByChunkName": {
     "main": "app.bundle.js"

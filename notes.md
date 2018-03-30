@@ -17,5 +17,10 @@ IIFE (self invoking functions) no longer needed
 "bare import" - not relative or url path (like for modules)
 
 Module 3 accelerating development
+* webpack-dev-server
+  * serve static content
+  * watch content base
+  * serving this from memory not dist
+  * nodemon
 
 
