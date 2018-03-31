@@ -23,4 +23,10 @@ Module 3 accelerating development
   * serving this from memory not dist
   * nodemon
 
-
+Module 4
+env options
+named configurations
+multiple .config files are an advanced option
+webpack merge is an immutable merge option that doesn't modify base config (will deep merge)
+webpack 4 has tapable
+Define plugin!

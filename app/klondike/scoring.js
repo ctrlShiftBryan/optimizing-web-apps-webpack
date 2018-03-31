@@ -5,7 +5,7 @@ function Scoring() {
   this.score = 0;
 
   this.newGame = function () {
-    this.score = 0;
+    this.score = 1;
   };
   this.tableauCardTurnedUp = function () {
     this.score += 10;
@@ -31,8 +31,12 @@ function Scoring() {
     }
   }
 }
-
+if(BRYAN_ARENDT) {
+  console.log("bryan arendt")
+}
 console.log('[scoring] evaluating');
+
+console.log(ENV_IS);
 
 if (module.hot) {
 
