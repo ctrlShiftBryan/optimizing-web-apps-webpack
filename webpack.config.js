@@ -10,15 +10,15 @@ const baseConfig = {
     filename: "app.bundle.js",
     publicPath: "/dist/"
   },
-  // module: {
-  //   rules: [{
-  //     test: /\.js$/,
-  //     exclude: /(node_modules|bower_components)/,
-  //     use: {
-  //       loader: 'babel-loader'
-  //     }
-  //   }]
-  // },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader'
+      }
+    }]
+  },
 
   plugins: [
     new webpack.NamedModulesPlugin(),

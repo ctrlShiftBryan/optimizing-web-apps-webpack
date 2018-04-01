@@ -1,42 +1,48 @@
 
-function Scoring() {
-  "use strict";
+class Scoring {
 
-  this.score = 0;
+  constructor() {
+    this.score = 0;
+  }
 
-  this.newGame = function () {
-    this.score = 1;
-  };
-  this.tableauCardTurnedUp = function () {
-    this.score += 10;
-  };
-  this.dropped = function (source, destionation) {
-    this.score += scoreForMoving(source, destionation) || 0;
-  };
-  this.wasteRecycled = function () {
+  newGame() {
+    setTimeout(() => { throw "Oh really you did what..."}, 100);
+    this.score = 0;
+  }
+
+  tableauCardTurnedUp() {
+    this.score += 5;
+  }
+
+  dropped(source, destination) {
+    this.score += scoreForMoving(source, destination) || 0;
+  }
+
+  wasteRecycled() {
     this.score = Math.max(this.score - 100, 0);
-  };
+  }
 
-  function scoreForMoving(source, destionation) {
-    if (destionation.name === "TableauPile") {
-      if (source.name === "FoundationPile") {
-        return -15;
-      }
-      return 5;
+}
+
+function scoreForMoving(source, destination) {
+  if (destination.name === "TableauPile") {
+    if (source.name === "FoundationPile") {
+      return -15;
     }
-    if (destionation.name === "FoundationPile") {
-      if (source.name === "TableauPile" || source.name === "WastePile") {
-        return 10;
-      }
+    return 5;
+  }
+  if (destination.name === "FoundationPile") {
+    if (source.name === "TableauPile" || source.name === "WastePile") {
+      return 10;
     }
   }
 }
-if(ENV_IS_DEVELOPMENT) {
-  console.log("bryan arendt")
-}
-console.log('[scoring] evaluating');
 
 console.log(ENV_IS);
+
+if (ENV_IS_DEVELOPMENT) {
+  console.log('[scoring] evaluating');
+}
 
 if (module.hot) {
 
@@ -45,10 +51,10 @@ if (module.hot) {
   const doc = angular.element(document);
   const injector = doc.injector();
   if (injector) {
-    const actualService = injector.get("scoring");
-    const newScoringService = new Scoring();
+    const actualService = Object.getPrototypeOf(injector.get("scoring"));
+    const newScoringService = Object.getPrototypeOf(new Scoring());
     // note: just replaces functions
-    Object.keys(actualService)
+    Object.getOwnPropertyNames(actualService)
       .filter(key => typeof actualService[key] === "function")
       .forEach(key => actualService[key] = newScoringService[key]);
     doc.find('html').scope().$apply();
@@ -57,4 +63,4 @@ if (module.hot) {
 }
 
 angular.module("klondike.scoring", [])
-  .service("scoring", [Scoring]);
+  .factory("scoring", () => new Scoring());

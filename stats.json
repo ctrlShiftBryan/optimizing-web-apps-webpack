@@ -2,16 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "3.11.0",
-  "hash": "8ebc5a3f7d78a88d5855",
-  "time": 308,
+  "hash": "a08b8e5d71524376fa1b",
+  "time": 36,
   "publicPath": "/dist/",
   "assetsByChunkName": {
-    "main": "app.bundle.js"
+    "main": [
+      "app.bundle.js",
+      "0.0450a94c13c5db826184.hot-update.js"
+    ]
   },
   "assets": [
     {
       "name": "app.bundle.js",
-      "size": 362538,
+      "size": 362311,
       "chunks": [
         0
       ],
@@ -20,6 +23,24 @@
       ],
       "emitted": true,
       "isOverSizeLimit": true
+    },
+    {
+      "name": "0.0450a94c13c5db826184.hot-update.js",
+      "size": 1604,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "0450a94c13c5db826184.hot-update.json",
+      "size": 43,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
     }
   ],
   "filteredAssets": 0,
@@ -29,7 +50,8 @@
         0
       ],
       "assets": [
-        "app.bundle.js"
+        "app.bundle.js",
+        "0.0450a94c13c5db826184.hot-update.js"
       ],
       "isOverSizeLimit": true
     }
@@ -41,25 +63,26 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 327623,
+      "size": 327396,
       "names": [
         "main"
       ],
       "files": [
-        "app.bundle.js"
+        "app.bundle.js",
+        "0.0450a94c13c5db826184.hot-update.js"
       ],
-      "hash": "c624171785a7364729da",
+      "hash": "db025f8bfe9b02472ff7",
       "parents": [],
       "modules": [
         {
           "id": "./app/app.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "name": "./app/app.js",
           "index": 27,
           "index2": 30,
-          "size": 183,
+          "size": 181,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -87,24 +110,24 @@
           "providedExports": [],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "import \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\";\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);\n"
+          "source": "import \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\";\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
         },
         {
           "id": "./app/klondike/board.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
           "name": "./app/klondike/board.js",
           "index": 30,
           "index2": 28,
-          "size": 1516,
+          "size": 1379,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -113,7 +136,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -125,24 +148,24 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.board\", [\"ngRoute\", \"klondike.game\"])\n    .config([\"$routeProvider\", function ($routeProvider) {\n      $routeProvider\n        .when(\"/board\", {\n          templateUrl: \"klondike/board.html\",\n          controller: \"KlondikeController\"\n        })\n        .otherwise({redirectTo: \"/board\"});\n    }])\n    .controller(\"KlondikeController\", [\"$scope\", \"klondikeGame\", \"scoring\", function KlondikeController($scope, klondikeGame, scoring) {\n      klondikeGame.newGame();\n      $scope.game = klondikeGame;\n      $scope.scoring = scoring;\n    }])\n    .directive(\"sNoPile\", function () {\n      return {\n        restrict: \"E\",\n        template: \"<div class=\\\"no-pile\\\"></div>\"\n      };\n    })\n    .directive(\"sTableau\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/tableau.html\"\n      };\n    })\n    .directive(\"sFoundation\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/foundation.html\"\n      };\n    })\n    .directive(\"sCard\", function () {\n      return {\n        restrict: \"A\",\n        templateUrl: \"cards/card.html\",\n        scope: {\n          card: \"=\"\n        }\n      };\n    })\n    .directive(\"sRemainder\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/remainder.html\"\n      };\n    })\n    .directive(\"sWaste\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/waste.html\"\n      };\n    });\n})();\n"
+          "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.board\", [\"ngRoute\", \"klondike.game\"]).config([\"$routeProvider\", function ($routeProvider) {\n    $routeProvider.when(\"/board\", {\n      templateUrl: \"klondike/board.html\",\n      controller: \"KlondikeController\"\n    }).otherwise({\n      redirectTo: \"/board\"\n    });\n  }]).controller(\"KlondikeController\", [\"$scope\", \"klondikeGame\", \"scoring\", function KlondikeController($scope, klondikeGame, scoring) {\n    klondikeGame.newGame();\n    $scope.game = klondikeGame;\n    $scope.scoring = scoring;\n  }]).directive(\"sNoPile\", function () {\n    return {\n      restrict: \"E\",\n      template: \"<div class=\\\"no-pile\\\"></div>\"\n    };\n  }).directive(\"sTableau\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/tableau.html\"\n    };\n  }).directive(\"sFoundation\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/foundation.html\"\n    };\n  }).directive(\"sCard\", function () {\n    return {\n      restrict: \"A\",\n      templateUrl: \"cards/card.html\",\n      scope: {\n        card: \"=\"\n      }\n    };\n  }).directive(\"sRemainder\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/remainder.html\"\n    };\n  }).directive(\"sWaste\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/waste.html\"\n    };\n  });\n})();"
         },
         {
           "id": "./app/klondike/game.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
           "name": "./app/klondike/game.js",
           "index": 31,
           "index2": 29,
-          "size": 1871,
+          "size": 1789,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -151,7 +174,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -163,24 +186,24 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.game\", [])\n    .service(\"klondikeGame\", [\"scoring\", KlondikeGame]);\n\n  function KlondikeGame(scoring) {\n    this.newGame = function newGame() {\n      var cards = new Deck().shuffled();\n      this.newGameFromDeck(cards);\n    };\n\n    this.newGameFromDeck = function (cards) {\n      scoring.newGame();\n      turnAllCardsDown(cards);\n      this.tableaus = dealTableaus(cards);\n      this.foundations = buildFoundations();\n      this.remainder = dealRemainder(cards);\n    };\n\n    function turnAllCardsDown(cards) {\n      cards.forEach(function (card) {\n        card.turnDown();\n      });\n    }\n\n    function dealTableaus(cards) {\n      var tableaus = [\n        new TableauPile(cards.slice(0, 1), scoring),\n        new TableauPile(cards.slice(1, 3), scoring),\n        new TableauPile(cards.slice(3, 6), scoring),\n        new TableauPile(cards.slice(6, 10), scoring),\n        new TableauPile(cards.slice(10, 15), scoring),\n        new TableauPile(cards.slice(15, 21), scoring),\n        new TableauPile(cards.slice(21, 28), scoring)\n      ];\n      tableaus.forEach(function (tableau) {\n        tableau.turnTopCardUp();\n      });\n      return tableaus;\n    }\n\n    function buildFoundations() {\n      return _.range(1, 5)\n        .map(function () {\n          return new FoundationPile([], scoring);\n        });\n    }\n\n    function dealRemainder(cards) {\n      return new RemainderPile(cards.slice(28), scoring);\n    }\n  }\n\n  KlondikeGame.prototype.tryMoveTopCardToAnyFoundation = function (sourcePile) {\n    if (sourcePile.isEmpty()) {\n      return;\n    }\n    var foundationThatWillAccept = _.find(this.foundations, function (foundation) {\n      return foundation.willAcceptCard(sourcePile.topCard());\n    });\n    if (foundationThatWillAccept) {\n      foundationThatWillAccept.moveCardsFrom(sourcePile);\n    }\n  };\n\n})();\n"
+          "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.game\", []).service(\"klondikeGame\", [\"scoring\", KlondikeGame]);\n\n  function KlondikeGame(scoring) {\n    this.newGame = function newGame() {\n      var cards = new Deck().shuffled();\n      this.newGameFromDeck(cards);\n    };\n\n    this.newGameFromDeck = function (cards) {\n      scoring.newGame();\n      turnAllCardsDown(cards);\n      this.tableaus = dealTableaus(cards);\n      this.foundations = buildFoundations();\n      this.remainder = dealRemainder(cards);\n    };\n\n    function turnAllCardsDown(cards) {\n      cards.forEach(function (card) {\n        card.turnDown();\n      });\n    }\n\n    function dealTableaus(cards) {\n      var tableaus = [new TableauPile(cards.slice(0, 1), scoring), new TableauPile(cards.slice(1, 3), scoring), new TableauPile(cards.slice(3, 6), scoring), new TableauPile(cards.slice(6, 10), scoring), new TableauPile(cards.slice(10, 15), scoring), new TableauPile(cards.slice(15, 21), scoring), new TableauPile(cards.slice(21, 28), scoring)];\n      tableaus.forEach(function (tableau) {\n        tableau.turnTopCardUp();\n      });\n      return tableaus;\n    }\n\n    function buildFoundations() {\n      return _.range(1, 5).map(function () {\n        return new FoundationPile([], scoring);\n      });\n    }\n\n    function dealRemainder(cards) {\n      return new RemainderPile(cards.slice(28), scoring);\n    }\n  }\n\n  KlondikeGame.prototype.tryMoveTopCardToAnyFoundation = function (sourcePile) {\n    if (sourcePile.isEmpty()) {\n      return;\n    }\n\n    var foundationThatWillAccept = _.find(this.foundations, function (foundation) {\n      return foundation.willAcceptCard(sourcePile.topCard());\n    });\n\n    if (foundationThatWillAccept) {\n      foundationThatWillAccept.moveCardsFrom(sourcePile);\n    }\n  };\n})();"
         },
         {
           "id": "./app/klondike/klondike.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
           "name": "./app/klondike/klondike.js",
           "index": 29,
           "index2": 27,
-          "size": 93,
+          "size": 84,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -189,7 +212,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -201,15 +224,15 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "angular.module(\"klondike\", [\n  \"klondike.game\",\n  \"klondike.board\",\n  \"klondike.scoring\"\n]);\n"
+          "source": "angular.module(\"klondike\", [\"klondike.game\", \"klondike.board\", \"klondike.scoring\"]);"
         },
         {
           "id": "./app/klondike/scoring.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
           "name": "./app/klondike/scoring.js",
           "index": 28,
           "index2": 26,
-          "size": 1486,
+          "size": 1489,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -218,7 +241,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -227,7 +250,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -239,7 +262,7 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 2,
-          "source": "\nfunction Scoring() {\n  \"use strict\";\n\n  this.score = 0;\n\n  this.newGame = function () {\n    this.score = 1;\n  };\n  this.tableauCardTurnedUp = function () {\n    this.score += 10;\n  };\n  this.dropped = function (source, destionation) {\n    this.score += scoreForMoving(source, destionation) || 0;\n  };\n  this.wasteRecycled = function () {\n    this.score = Math.max(this.score - 100, 0);\n  };\n\n  function scoreForMoving(source, destionation) {\n    if (destionation.name === \"TableauPile\") {\n      if (source.name === \"FoundationPile\") {\n        return -15;\n      }\n      return 5;\n    }\n    if (destionation.name === \"FoundationPile\") {\n      if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n        return 10;\n      }\n    }\n  }\n}\nif(ENV_IS_DEVELOPMENT) {\n  console.log(\"bryan arendt\")\n}\nconsole.log('[scoring] evaluating');\n\nconsole.log(ENV_IS);\n\nif (module.hot) {\n\n  module.hot.accept(console.log.bind(console));\n\n  const doc = angular.element(document);\n  const injector = doc.injector();\n  if (injector) {\n    const actualService = injector.get(\"scoring\");\n    const newScoringService = new Scoring();\n    // note: just replaces functions\n    Object.keys(actualService)\n      .filter(key => typeof actualService[key] === \"function\")\n      .forEach(key => actualService[key] = newScoringService[key]);\n    doc.find('html').scope().$apply();\n    console.info('[scoring] Hot Swapped!!');\n  }\n}\n\nangular.module(\"klondike.scoring\", [])\n  .service(\"scoring\", [Scoring]);\n"
+          "source": "class Scoring {\n  constructor() {\n    this.score = 0;\n  }\n\n  newGame() {\n    setTimeout(() => {\n      throw \"Oh really you did what...\";\n    }, 100);\n    this.score = 0;\n  }\n\n  tableauCardTurnedUp() {\n    this.score += 5;\n  }\n\n  dropped(source, destination) {\n    this.score += scoreForMoving(source, destination) || 0;\n  }\n\n  wasteRecycled() {\n    this.score = Math.max(this.score - 100, 0);\n  }\n\n}\n\nfunction scoreForMoving(source, destination) {\n  if (destination.name === \"TableauPile\") {\n    if (source.name === \"FoundationPile\") {\n      return -15;\n    }\n\n    return 5;\n  }\n\n  if (destination.name === \"FoundationPile\") {\n    if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n      return 10;\n    }\n  }\n}\n\nconsole.log(ENV_IS);\n\nif (ENV_IS_DEVELOPMENT) {\n  console.log('[scoring] evaluating');\n}\n\nif (module.hot) {\n  module.hot.accept(console.log.bind(console));\n  const doc = angular.element(document);\n  const injector = doc.injector();\n\n  if (injector) {\n    const actualService = Object.getPrototypeOf(injector.get(\"scoring\"));\n    const newScoringService = Object.getPrototypeOf(new Scoring()); // note: just replaces functions\n\n    Object.getOwnPropertyNames(actualService).filter(key => typeof actualService[key] === \"function\").forEach(key => actualService[key] = newScoringService[key]);\n    doc.find('html').scope().$apply();\n    console.info('[scoring] Hot Swapped!!');\n  }\n}\n\nangular.module(\"klondike.scoring\", []).factory(\"scoring\", () => new Scoring());"
         },
         {
           "id": "./node_modules/ansi-html/index.js",
@@ -249,7 +272,7 @@
           "index2": 13,
           "size": 4263,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -287,7 +310,7 @@
           "index2": 8,
           "size": 135,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -325,7 +348,7 @@
           "index2": 21,
           "size": 8328,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -363,7 +386,7 @@
           "index2": 17,
           "size": 231,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -401,7 +424,7 @@
           "index2": 15,
           "size": 6587,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -439,7 +462,7 @@
           "index2": 16,
           "size": 48986,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -486,7 +509,7 @@
           "index2": 14,
           "size": 2993,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -524,7 +547,7 @@
           "index2": 10,
           "size": 7862,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -562,7 +585,7 @@
           "index2": 2,
           "size": 14670,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -600,7 +623,7 @@
           "index2": 4,
           "size": 2510,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -638,7 +661,7 @@
           "index2": 5,
           "size": 2544,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -676,7 +699,7 @@
           "index2": 6,
           "size": 127,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -714,7 +737,7 @@
           "index2": 11,
           "size": 180708,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -752,7 +775,7 @@
           "index2": 9,
           "size": 161,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -790,7 +813,7 @@
           "index2": 7,
           "size": 23317,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -828,7 +851,7 @@
           "index2": 3,
           "size": 314,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -866,7 +889,7 @@
           "index2": 23,
           "size": 7934,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -904,7 +927,7 @@
           "index2": 18,
           "size": 3671,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -942,7 +965,7 @@
           "index2": 12,
           "size": 1080,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -980,7 +1003,7 @@
           "index2": 1,
           "size": 509,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1027,7 +1050,7 @@
           "index2": 31,
           "size": 52,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1054,7 +1077,7 @@
           "index2": 0,
           "size": 517,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1129,7 +1152,7 @@
           "index2": 22,
           "size": 77,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1144,15 +1167,6 @@
           "warnings": 0,
           "reasons": [
             {
-              "moduleId": "./node_modules/webpack/hot/only-dev-server.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack/hot/only-dev-server.js",
-              "module": "(webpack)/hot/only-dev-server.js",
-              "moduleName": "(webpack)/hot/only-dev-server.js",
-              "type": "cjs require",
-              "userRequest": "./emitter",
-              "loc": "55:18-38"
-            },
-            {
               "moduleId": "./node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
               "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
               "module": "(webpack)-dev-server/client?http://localhost:8080",
@@ -1160,6 +1174,15 @@
               "type": "cjs require",
               "userRequest": "webpack/hot/emitter",
               "loc": "225:21-51"
+            },
+            {
+              "moduleId": "./node_modules/webpack/hot/only-dev-server.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack/hot/only-dev-server.js",
+              "module": "(webpack)/hot/only-dev-server.js",
+              "moduleName": "(webpack)/hot/only-dev-server.js",
+              "type": "cjs require",
+              "userRequest": "./emitter",
+              "loc": "55:18-38"
             }
           ],
           "usedExports": true,
@@ -1176,7 +1199,7 @@
           "index2": 24,
           "size": 1313,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1214,7 +1237,7 @@
           "index2": 19,
           "size": 1044,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1270,7 +1293,7 @@
           "index2": 25,
           "size": 2371,
           "cacheable": true,
-          "built": true,
+          "built": false,
           "optional": false,
           "prefetched": false,
           "chunks": [
@@ -1318,13 +1341,13 @@
   "modules": [
     {
       "id": "./app/app.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "name": "./app/app.js",
       "index": 27,
       "index2": 30,
-      "size": 183,
+      "size": 181,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1352,24 +1375,24 @@
       "providedExports": [],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "import \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\";\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);\n"
+      "source": "import \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\";\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
     },
     {
       "id": "./app/klondike/board.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
       "name": "./app/klondike/board.js",
       "index": 30,
       "index2": 28,
-      "size": 1516,
+      "size": 1379,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1378,7 +1401,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1390,24 +1413,24 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.board\", [\"ngRoute\", \"klondike.game\"])\n    .config([\"$routeProvider\", function ($routeProvider) {\n      $routeProvider\n        .when(\"/board\", {\n          templateUrl: \"klondike/board.html\",\n          controller: \"KlondikeController\"\n        })\n        .otherwise({redirectTo: \"/board\"});\n    }])\n    .controller(\"KlondikeController\", [\"$scope\", \"klondikeGame\", \"scoring\", function KlondikeController($scope, klondikeGame, scoring) {\n      klondikeGame.newGame();\n      $scope.game = klondikeGame;\n      $scope.scoring = scoring;\n    }])\n    .directive(\"sNoPile\", function () {\n      return {\n        restrict: \"E\",\n        template: \"<div class=\\\"no-pile\\\"></div>\"\n      };\n    })\n    .directive(\"sTableau\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/tableau.html\"\n      };\n    })\n    .directive(\"sFoundation\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/foundation.html\"\n      };\n    })\n    .directive(\"sCard\", function () {\n      return {\n        restrict: \"A\",\n        templateUrl: \"cards/card.html\",\n        scope: {\n          card: \"=\"\n        }\n      };\n    })\n    .directive(\"sRemainder\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/remainder.html\"\n      };\n    })\n    .directive(\"sWaste\", function () {\n      return {\n        restrict: \"E\",\n        templateUrl: \"klondike/piles/waste.html\"\n      };\n    });\n})();\n"
+      "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.board\", [\"ngRoute\", \"klondike.game\"]).config([\"$routeProvider\", function ($routeProvider) {\n    $routeProvider.when(\"/board\", {\n      templateUrl: \"klondike/board.html\",\n      controller: \"KlondikeController\"\n    }).otherwise({\n      redirectTo: \"/board\"\n    });\n  }]).controller(\"KlondikeController\", [\"$scope\", \"klondikeGame\", \"scoring\", function KlondikeController($scope, klondikeGame, scoring) {\n    klondikeGame.newGame();\n    $scope.game = klondikeGame;\n    $scope.scoring = scoring;\n  }]).directive(\"sNoPile\", function () {\n    return {\n      restrict: \"E\",\n      template: \"<div class=\\\"no-pile\\\"></div>\"\n    };\n  }).directive(\"sTableau\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/tableau.html\"\n    };\n  }).directive(\"sFoundation\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/foundation.html\"\n    };\n  }).directive(\"sCard\", function () {\n    return {\n      restrict: \"A\",\n      templateUrl: \"cards/card.html\",\n      scope: {\n        card: \"=\"\n      }\n    };\n  }).directive(\"sRemainder\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/remainder.html\"\n    };\n  }).directive(\"sWaste\", function () {\n    return {\n      restrict: \"E\",\n      templateUrl: \"klondike/piles/waste.html\"\n    };\n  });\n})();"
     },
     {
       "id": "./app/klondike/game.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
       "name": "./app/klondike/game.js",
       "index": 31,
       "index2": 29,
-      "size": 1871,
+      "size": 1789,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1416,7 +1439,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1428,24 +1451,24 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.game\", [])\n    .service(\"klondikeGame\", [\"scoring\", KlondikeGame]);\n\n  function KlondikeGame(scoring) {\n    this.newGame = function newGame() {\n      var cards = new Deck().shuffled();\n      this.newGameFromDeck(cards);\n    };\n\n    this.newGameFromDeck = function (cards) {\n      scoring.newGame();\n      turnAllCardsDown(cards);\n      this.tableaus = dealTableaus(cards);\n      this.foundations = buildFoundations();\n      this.remainder = dealRemainder(cards);\n    };\n\n    function turnAllCardsDown(cards) {\n      cards.forEach(function (card) {\n        card.turnDown();\n      });\n    }\n\n    function dealTableaus(cards) {\n      var tableaus = [\n        new TableauPile(cards.slice(0, 1), scoring),\n        new TableauPile(cards.slice(1, 3), scoring),\n        new TableauPile(cards.slice(3, 6), scoring),\n        new TableauPile(cards.slice(6, 10), scoring),\n        new TableauPile(cards.slice(10, 15), scoring),\n        new TableauPile(cards.slice(15, 21), scoring),\n        new TableauPile(cards.slice(21, 28), scoring)\n      ];\n      tableaus.forEach(function (tableau) {\n        tableau.turnTopCardUp();\n      });\n      return tableaus;\n    }\n\n    function buildFoundations() {\n      return _.range(1, 5)\n        .map(function () {\n          return new FoundationPile([], scoring);\n        });\n    }\n\n    function dealRemainder(cards) {\n      return new RemainderPile(cards.slice(28), scoring);\n    }\n  }\n\n  KlondikeGame.prototype.tryMoveTopCardToAnyFoundation = function (sourcePile) {\n    if (sourcePile.isEmpty()) {\n      return;\n    }\n    var foundationThatWillAccept = _.find(this.foundations, function (foundation) {\n      return foundation.willAcceptCard(sourcePile.topCard());\n    });\n    if (foundationThatWillAccept) {\n      foundationThatWillAccept.moveCardsFrom(sourcePile);\n    }\n  };\n\n})();\n"
+      "source": "(function () {\n  \"use strict\";\n\n  angular.module(\"klondike.game\", []).service(\"klondikeGame\", [\"scoring\", KlondikeGame]);\n\n  function KlondikeGame(scoring) {\n    this.newGame = function newGame() {\n      var cards = new Deck().shuffled();\n      this.newGameFromDeck(cards);\n    };\n\n    this.newGameFromDeck = function (cards) {\n      scoring.newGame();\n      turnAllCardsDown(cards);\n      this.tableaus = dealTableaus(cards);\n      this.foundations = buildFoundations();\n      this.remainder = dealRemainder(cards);\n    };\n\n    function turnAllCardsDown(cards) {\n      cards.forEach(function (card) {\n        card.turnDown();\n      });\n    }\n\n    function dealTableaus(cards) {\n      var tableaus = [new TableauPile(cards.slice(0, 1), scoring), new TableauPile(cards.slice(1, 3), scoring), new TableauPile(cards.slice(3, 6), scoring), new TableauPile(cards.slice(6, 10), scoring), new TableauPile(cards.slice(10, 15), scoring), new TableauPile(cards.slice(15, 21), scoring), new TableauPile(cards.slice(21, 28), scoring)];\n      tableaus.forEach(function (tableau) {\n        tableau.turnTopCardUp();\n      });\n      return tableaus;\n    }\n\n    function buildFoundations() {\n      return _.range(1, 5).map(function () {\n        return new FoundationPile([], scoring);\n      });\n    }\n\n    function dealRemainder(cards) {\n      return new RemainderPile(cards.slice(28), scoring);\n    }\n  }\n\n  KlondikeGame.prototype.tryMoveTopCardToAnyFoundation = function (sourcePile) {\n    if (sourcePile.isEmpty()) {\n      return;\n    }\n\n    var foundationThatWillAccept = _.find(this.foundations, function (foundation) {\n      return foundation.willAcceptCard(sourcePile.topCard());\n    });\n\n    if (foundationThatWillAccept) {\n      foundationThatWillAccept.moveCardsFrom(sourcePile);\n    }\n  };\n})();"
     },
     {
       "id": "./app/klondike/klondike.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
       "name": "./app/klondike/klondike.js",
       "index": 29,
       "index2": 27,
-      "size": 93,
+      "size": 84,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1454,7 +1477,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1466,15 +1489,15 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "angular.module(\"klondike\", [\n  \"klondike.game\",\n  \"klondike.board\",\n  \"klondike.scoring\"\n]);\n"
+      "source": "angular.module(\"klondike\", [\"klondike.game\", \"klondike.board\", \"klondike.scoring\"]);"
     },
     {
       "id": "./app/klondike/scoring.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
       "name": "./app/klondike/scoring.js",
       "index": 28,
       "index2": 26,
-      "size": 1486,
+      "size": 1489,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1483,7 +1506,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1492,7 +1515,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1504,7 +1527,7 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 2,
-      "source": "\nfunction Scoring() {\n  \"use strict\";\n\n  this.score = 0;\n\n  this.newGame = function () {\n    this.score = 1;\n  };\n  this.tableauCardTurnedUp = function () {\n    this.score += 10;\n  };\n  this.dropped = function (source, destionation) {\n    this.score += scoreForMoving(source, destionation) || 0;\n  };\n  this.wasteRecycled = function () {\n    this.score = Math.max(this.score - 100, 0);\n  };\n\n  function scoreForMoving(source, destionation) {\n    if (destionation.name === \"TableauPile\") {\n      if (source.name === \"FoundationPile\") {\n        return -15;\n      }\n      return 5;\n    }\n    if (destionation.name === \"FoundationPile\") {\n      if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n        return 10;\n      }\n    }\n  }\n}\nif(ENV_IS_DEVELOPMENT) {\n  console.log(\"bryan arendt\")\n}\nconsole.log('[scoring] evaluating');\n\nconsole.log(ENV_IS);\n\nif (module.hot) {\n\n  module.hot.accept(console.log.bind(console));\n\n  const doc = angular.element(document);\n  const injector = doc.injector();\n  if (injector) {\n    const actualService = injector.get(\"scoring\");\n    const newScoringService = new Scoring();\n    // note: just replaces functions\n    Object.keys(actualService)\n      .filter(key => typeof actualService[key] === \"function\")\n      .forEach(key => actualService[key] = newScoringService[key]);\n    doc.find('html').scope().$apply();\n    console.info('[scoring] Hot Swapped!!');\n  }\n}\n\nangular.module(\"klondike.scoring\", [])\n  .service(\"scoring\", [Scoring]);\n"
+      "source": "class Scoring {\n  constructor() {\n    this.score = 0;\n  }\n\n  newGame() {\n    setTimeout(() => {\n      throw \"Oh really you did what...\";\n    }, 100);\n    this.score = 0;\n  }\n\n  tableauCardTurnedUp() {\n    this.score += 5;\n  }\n\n  dropped(source, destination) {\n    this.score += scoreForMoving(source, destination) || 0;\n  }\n\n  wasteRecycled() {\n    this.score = Math.max(this.score - 100, 0);\n  }\n\n}\n\nfunction scoreForMoving(source, destination) {\n  if (destination.name === \"TableauPile\") {\n    if (source.name === \"FoundationPile\") {\n      return -15;\n    }\n\n    return 5;\n  }\n\n  if (destination.name === \"FoundationPile\") {\n    if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n      return 10;\n    }\n  }\n}\n\nconsole.log(ENV_IS);\n\nif (ENV_IS_DEVELOPMENT) {\n  console.log('[scoring] evaluating');\n}\n\nif (module.hot) {\n  module.hot.accept(console.log.bind(console));\n  const doc = angular.element(document);\n  const injector = doc.injector();\n\n  if (injector) {\n    const actualService = Object.getPrototypeOf(injector.get(\"scoring\"));\n    const newScoringService = Object.getPrototypeOf(new Scoring()); // note: just replaces functions\n\n    Object.getOwnPropertyNames(actualService).filter(key => typeof actualService[key] === \"function\").forEach(key => actualService[key] = newScoringService[key]);\n    doc.find('html').scope().$apply();\n    console.info('[scoring] Hot Swapped!!');\n  }\n}\n\nangular.module(\"klondike.scoring\", []).factory(\"scoring\", () => new Scoring());"
     },
     {
       "id": "./node_modules/ansi-html/index.js",
@@ -1514,7 +1537,7 @@
       "index2": 13,
       "size": 4263,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1552,7 +1575,7 @@
       "index2": 8,
       "size": 135,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1590,7 +1613,7 @@
       "index2": 21,
       "size": 8328,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1628,7 +1651,7 @@
       "index2": 17,
       "size": 231,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1666,7 +1689,7 @@
       "index2": 15,
       "size": 6587,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1704,7 +1727,7 @@
       "index2": 16,
       "size": 48986,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1751,7 +1774,7 @@
       "index2": 19,
       "size": 1044,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1807,7 +1830,7 @@
       "index2": 31,
       "size": 52,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1834,7 +1857,7 @@
       "index2": 14,
       "size": 2993,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1872,7 +1895,7 @@
       "index2": 10,
       "size": 7862,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1910,7 +1933,7 @@
       "index2": 2,
       "size": 14670,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1948,7 +1971,7 @@
       "index2": 4,
       "size": 2510,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -1986,7 +2009,7 @@
       "index2": 5,
       "size": 2544,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2024,7 +2047,7 @@
       "index2": 6,
       "size": 127,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2062,7 +2085,7 @@
       "index2": 11,
       "size": 180708,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2100,7 +2123,7 @@
       "index2": 9,
       "size": 161,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2138,7 +2161,7 @@
       "index2": 7,
       "size": 23317,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2176,7 +2199,7 @@
       "index2": 3,
       "size": 314,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2214,7 +2237,7 @@
       "index2": 23,
       "size": 7934,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2252,7 +2275,7 @@
       "index2": 18,
       "size": 3671,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2290,7 +2313,7 @@
       "index2": 12,
       "size": 1080,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2328,7 +2351,7 @@
       "index2": 1,
       "size": 509,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2375,7 +2398,7 @@
       "index2": 0,
       "size": 517,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2450,7 +2473,7 @@
       "index2": 22,
       "size": 77,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2465,15 +2488,6 @@
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": "./node_modules/webpack/hot/only-dev-server.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack/hot/only-dev-server.js",
-          "module": "(webpack)/hot/only-dev-server.js",
-          "moduleName": "(webpack)/hot/only-dev-server.js",
-          "type": "cjs require",
-          "userRequest": "./emitter",
-          "loc": "55:18-38"
-        },
-        {
           "moduleId": "./node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
           "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack-dev-server/client/index.js?http://localhost:8080",
           "module": "(webpack)-dev-server/client?http://localhost:8080",
@@ -2481,6 +2495,15 @@
           "type": "cjs require",
           "userRequest": "webpack/hot/emitter",
           "loc": "225:21-51"
+        },
+        {
+          "moduleId": "./node_modules/webpack/hot/only-dev-server.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/webpack/hot/only-dev-server.js",
+          "module": "(webpack)/hot/only-dev-server.js",
+          "moduleName": "(webpack)/hot/only-dev-server.js",
+          "type": "cjs require",
+          "userRequest": "./emitter",
+          "loc": "55:18-38"
         }
       ],
       "usedExports": true,
@@ -2497,7 +2520,7 @@
       "index2": 24,
       "size": 1313,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
@@ -2535,7 +2558,7 @@
       "index2": 25,
       "size": 2371,
       "cacheable": true,
-      "built": true,
+      "built": false,
       "optional": false,
       "prefetched": false,
       "chunks": [
