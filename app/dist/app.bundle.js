@@ -60,22 +60,23 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app/app.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ "./app/app.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__klondike_scoring_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__klondike_scoring_js__ = __webpack_require__("./app/klondike/scoring.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__klondike_scoring_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__klondike_scoring_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__klondike_klondike_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__klondike_klondike_js__ = __webpack_require__("./app/klondike/klondike.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__klondike_klondike_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__klondike_klondike_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__klondike_board_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__klondike_board_js__ = __webpack_require__("./app/klondike/board.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__klondike_board_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__klondike_board_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__klondike_game_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__klondike_game_js__ = __webpack_require__("./app/klondike/game.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__klondike_game_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__klondike_game_js__);
 
 
@@ -86,80 +87,8 @@ angular.module("solitaire", ["klondike", "ngDraggable"]);
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
 
-
-function Scoring() {
-  "use strict";
-
-  this.score = 0;
-
-  this.newGame = function () {
-    this.score = 0;
-  };
-  this.tableauCardTurnedUp = function () {
-    this.score += 10;
-  };
-  this.dropped = function (source, destionation) {
-    this.score += scoreForMoving(source, destionation) || 0;
-  };
-  this.wasteRecycled = function () {
-    this.score = Math.max(this.score - 100, 0);
-  };
-
-  function scoreForMoving(source, destionation) {
-    if (destionation.name === "TableauPile") {
-      if (source.name === "FoundationPile") {
-        return -15;
-      }
-      return 5;
-    }
-    if (destionation.name === "FoundationPile") {
-      if (source.name === "TableauPile" || source.name === "WastePile") {
-        return 10;
-      }
-    }
-  }
-}
-
-console.log('[scoring] evaluating');
-
-if (false) {
-
-  module.hot.accept(console.log.bind(console));
-
-  const doc = angular.element(document);
-  const injector = doc.injector();
-  if (injector) {
-    const actualService = injector.get("scoring");
-    const newScoringService = new Scoring();
-    // note: just replaces functions
-    Object.keys(actualService)
-      .filter(key => typeof actualService[key] === "function")
-      .forEach(key => actualService[key] = newScoringService[key]);
-    doc.find('html').scope().$apply();
-    console.info('[scoring] Hot Swapped!!');
-  }
-}
-
-angular.module("klondike.scoring", [])
-  .service("scoring", [Scoring]);
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-angular.module("klondike", [
-  "klondike.game",
-  "klondike.board",
-  "klondike.scoring"
-]);
-
-
-/***/ }),
-/* 3 */
+/***/ "./app/klondike/board.js":
 /***/ (function(module, exports) {
 
 (function () {
@@ -222,7 +151,8 @@ angular.module("klondike", [
 
 
 /***/ }),
-/* 4 */
+
+/***/ "./app/klondike/game.js":
 /***/ (function(module, exports) {
 
 (function () {
@@ -294,5 +224,85 @@ angular.module("klondike", [
 })();
 
 
+/***/ }),
+
+/***/ "./app/klondike/klondike.js":
+/***/ (function(module, exports) {
+
+angular.module("klondike", [
+  "klondike.game",
+  "klondike.board",
+  "klondike.scoring"
+]);
+
+
+/***/ }),
+
+/***/ "./app/klondike/scoring.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+
+function Scoring() {
+  "use strict";
+
+  this.score = 0;
+
+  this.newGame = function () {
+    this.score = 1;
+  };
+  this.tableauCardTurnedUp = function () {
+    this.score += 10;
+  };
+  this.dropped = function (source, destionation) {
+    this.score += scoreForMoving(source, destionation) || 0;
+  };
+  this.wasteRecycled = function () {
+    this.score = Math.max(this.score - 100, 0);
+  };
+
+  function scoreForMoving(source, destionation) {
+    if (destionation.name === "TableauPile") {
+      if (source.name === "FoundationPile") {
+        return -15;
+      }
+      return 5;
+    }
+    if (destionation.name === "FoundationPile") {
+      if (source.name === "TableauPile" || source.name === "WastePile") {
+        return 10;
+      }
+    }
+  }
+}
+if(BRYAN_ARENDT) {
+  console.log("bryan arendt")
+}
+console.log('[scoring] evaluating');
+
+console.log(ENV_IS);
+
+if (false) {
+
+  module.hot.accept(console.log.bind(console));
+
+  const doc = angular.element(document);
+  const injector = doc.injector();
+  if (injector) {
+    const actualService = injector.get("scoring");
+    const newScoringService = new Scoring();
+    // note: just replaces functions
+    Object.keys(actualService)
+      .filter(key => typeof actualService[key] === "function")
+      .forEach(key => actualService[key] = newScoringService[key]);
+    doc.find('html').scope().$apply();
+    console.info('[scoring] Hot Swapped!!');
+  }
+}
+
+angular.module("klondike.scoring", [])
+  .service("scoring", [Scoring]);
+
+
 /***/ })
-/******/ ]);
+
+/******/ });

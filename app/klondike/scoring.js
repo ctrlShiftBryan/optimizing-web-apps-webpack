@@ -31,7 +31,7 @@ function Scoring() {
     }
   }
 }
-if(BRYAN_ARENDT) {
+if(ENV_IS_DEVELOPMENT) {
   console.log("bryan arendt")
 }
 console.log('[scoring] evaluating');

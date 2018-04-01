@@ -1,6 +1,7 @@
 const PATH = require("path");
 const webpack = require("webpack");
 const merge = require("webpack-merge");
+const StatsGraphPlugin = require('./StatsGraphPlugin');
 
 const baseConfig = {
   entry: "./app/app.js",
@@ -9,17 +10,19 @@ const baseConfig = {
     filename: "app.bundle.js",
     publicPath: "/dist/"
   },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      use: {
-        loader: 'babel-loader'
-      }
-    }]
-  },
+  // module: {
+  //   rules: [{
+  //     test: /\.js$/,
+  //     exclude: /(node_modules|bower_components)/,
+  //     use: {
+  //       loader: 'babel-loader'
+  //     }
+  //   }]
+  // },
 
   plugins: [
     new webpack.NamedModulesPlugin(),
+    new StatsGraphPlugin(),
   ]
 };
 
@@ -35,9 +38,9 @@ module.exports = function(env) {
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
-          BRYAN_ARENDT: isDevelopment,
+          ENV_IS_DEVELOPMENT: isDevelopment,
           ENV_IS: JSON.stringify(isDevelopment ? "development" : "production"),
-        })
+        }),
         // { // this is an anonymous custom plugin
         //   apply(compiler) {
         //     compiler.plugin("done", function(params){
