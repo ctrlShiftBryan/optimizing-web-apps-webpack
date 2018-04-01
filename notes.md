@@ -30,3 +30,7 @@ multiple .config files are an advanced option
 webpack merge is an immutable merge option that doesn't modify base config (will deep merge)
 webpack 4 has tapable
 Define plugin!
+
+Module 5
+@babel/preset-env -will allow you to target different versions of IE or chrome or whatever that you want to support
+
