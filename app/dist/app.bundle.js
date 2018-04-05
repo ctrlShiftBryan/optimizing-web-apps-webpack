@@ -215,67 +215,93 @@ angular.module("klondike", ["klondike.game", "klondike.board", "klondike.scoring
 /***/ "./app/klondike/scoring.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-function Scoring() {
-  "use strict";
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  this.score = 0;
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-  this.newGame = function () {
-    this.score = 1;
-  };
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-  this.tableauCardTurnedUp = function () {
-    this.score += 10;
-  };
+var Scoring =
+/*#__PURE__*/
+function () {
+  function Scoring() {
+    _classCallCheck(this, Scoring);
 
-  this.dropped = function (source, destionation) {
-    this.score += scoreForMoving(source, destionation) || 0;
-  };
+    this.score = 0;
+  }
 
-  this.wasteRecycled = function () {
-    this.score = Math.max(this.score - 100, 0);
-  };
+  _createClass(Scoring, [{
+    key: "newGame",
+    value: function newGame() {
+      setTimeout(function () {
+        throw "Oh really you did what...";
+      }, 100);
+      this.score = 0;
+    }
+  }, {
+    key: "tableauCardTurnedUp",
+    value: function tableauCardTurnedUp() {
+      this.score += 5;
+    }
+  }, {
+    key: "dropped",
+    value: function dropped(source, destination) {
+      this.score += scoreForMoving(source, destination) || 0;
+    }
+  }, {
+    key: "wasteRecycled",
+    value: function wasteRecycled() {
+      this.score = Math.max(this.score - 100, 0);
+    }
+  }]);
 
-  function scoreForMoving(source, destionation) {
-    if (destionation.name === "TableauPile") {
-      if (source.name === "FoundationPile") {
-        return -15;
-      }
+  return Scoring;
+}();
 
-      return 5;
+function scoreForMoving(source, destination) {
+  if (destination.name === "TableauPile") {
+    if (source.name === "FoundationPile") {
+      return -15;
     }
 
-    if (destionation.name === "FoundationPile") {
-      if (source.name === "TableauPile" || source.name === "WastePile") {
-        return 10;
-      }
+    return 5;
+  }
+
+  if (destination.name === "FoundationPile") {
+    if (source.name === "TableauPile" || source.name === "WastePile") {
+      return 10;
     }
   }
 }
 
-if (ENV_IS_DEVELOPMENT) {
-  console.log("bryan arendt");
-}
-
-console.log('[scoring] evaluating');
 console.log(ENV_IS);
+
+if (ENV_IS_DEVELOPMENT) {
+  console.log('[scoring] evaluating');
+}
 
 if (false) {
   module.hot.accept(console.log.bind(console));
-  const doc = angular.element(document);
-  const injector = doc.injector();
+  var doc = angular.element(document);
+  var injector = doc.injector();
 
   if (injector) {
-    const actualService = injector.get("scoring");
-    const newScoringService = new Scoring(); // note: just replaces functions
+    var actualService = Object.getPrototypeOf(injector.get("scoring"));
+    var newScoringService = Object.getPrototypeOf(new Scoring()); // note: just replaces functions
 
-    Object.keys(actualService).filter(key => typeof actualService[key] === "function").forEach(key => actualService[key] = newScoringService[key]);
+    Object.getOwnPropertyNames(actualService).filter(function (key) {
+      return typeof actualService[key] === "function";
+    }).forEach(function (key) {
+      return actualService[key] = newScoringService[key];
+    });
     doc.find('html').scope().$apply();
     console.info('[scoring] Hot Swapped!!');
   }
 }
 
-angular.module("klondike.scoring", []).service("scoring", [Scoring]);
+angular.module("klondike.scoring", []).factory("scoring", function () {
+  return new Scoring();
+});
 
 /***/ })
 

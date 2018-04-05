@@ -1,7 +1,8 @@
 const PATH = require("path");
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const StatsGraphPlugin = require('./StatsGraphPlugin');
+const StatsGraphPlugin = require("./StatsGraphPlugin");
+const babelLoader = require('./babelLoader')
 
 const baseConfig = {
   entry: "./app/app.js",
@@ -10,20 +11,8 @@ const baseConfig = {
     filename: "app.bundle.js",
     publicPath: "/dist/"
   },
-  module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader'
-      }
-    }]
-  },
 
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-    new StatsGraphPlugin(),
-  ]
+  plugins: [new webpack.NamedModulesPlugin(), new StatsGraphPlugin()]
 };
 
 module.exports = function(env) {
@@ -33,14 +22,15 @@ module.exports = function(env) {
       devServer: {
         contentBase: PATH.resolve(__dirname, "app"),
         publicPath: "/dist/",
-        hotOnly: true
+        hotOnly: true,
+        overlay: true
       },
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
           ENV_IS_DEVELOPMENT: isDevelopment,
-          ENV_IS: JSON.stringify(isDevelopment ? "development" : "production"),
-        }),
+          ENV_IS: JSON.stringify(isDevelopment ? "development" : "production")
+        })
         // { // this is an anonymous custom plugin
         //   apply(compiler) {
         //     compiler.plugin("done", function(params){
@@ -49,7 +39,9 @@ module.exports = function(env) {
         //   }
         // }
       ]
-    })
+    });
+  } else {
+    return merge(baseConfig, babelLoader);
   }
   console.log(
     `This is a ${isDevelopment ? "development" : "production"} build`
