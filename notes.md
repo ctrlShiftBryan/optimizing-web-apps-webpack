@@ -34,3 +34,12 @@ Define plugin!
 Module 5
 @babel/preset-env -will allow you to target different versions of IE or chrome or whatever that you want to support
 after imports runs rules
+
+setup compilation process and plug in config
+polyfill
+browser support
+tool - like env. preset
+
+take aways
+tools: graph, size, code, build
+dont be afraid to look behind the scenes

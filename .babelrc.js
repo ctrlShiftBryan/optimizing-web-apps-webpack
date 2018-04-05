@@ -7,7 +7,8 @@ module.exports = {
         modules: false,
         targets: {
           browsers: ["> 1%"]
-        }
+        },
+        useBuiltIns: "usage"
       }
     ]
   ]

@@ -31,15 +31,15 @@ module.exports = function(env) {
           ENV_IS_DEVELOPMENT: isDevelopment,
           ENV_IS: JSON.stringify(isDevelopment ? "development" : "production")
         })
-        // { // this is an anonymous custom plugin
+        // ,{ // this is an anonymous custom plugin
         //   apply(compiler) {
         //     compiler.plugin("done", function(params){
         //       console.log(require('util').inspect(compiler.options));
         //     });
         //   }
         // }
-      ]
-    });
+      ],
+    }, babelLoader);
   } else {
     return merge(baseConfig, babelLoader);
   }
