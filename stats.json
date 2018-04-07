@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.11.0",
   "hash": "ca2a5edd7db53cbfb17b",
-  "time": 771,
+  "time": 3645,
   "publicPath": "/dist/",
   "assetsByChunkName": {
     "main": "app.bundle.js"
@@ -51,7 +51,7 @@
       "modules": [
         {
           "id": "./app/app.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "name": "./app/app.js",
           "index": 0,
           "index2": 37,
@@ -79,7 +79,7 @@
         },
         {
           "id": "./app/klondike/board.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
           "name": "./app/klondike/board.js",
           "index": 36,
           "index2": 35,
@@ -92,7 +92,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -101,7 +101,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -117,7 +117,7 @@
         },
         {
           "id": "./app/klondike/game.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
           "name": "./app/klondike/game.js",
           "index": 37,
           "index2": 36,
@@ -130,7 +130,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -139,7 +139,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -155,7 +155,7 @@
         },
         {
           "id": "./app/klondike/klondike.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
           "name": "./app/klondike/klondike.js",
           "index": 35,
           "index2": 34,
@@ -168,7 +168,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -177,7 +177,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -193,7 +193,7 @@
         },
         {
           "id": "./app/klondike/scoring.js",
-          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
           "name": "./app/klondike/scoring.js",
           "index": 1,
           "index2": 33,
@@ -206,7 +206,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "issuerId": "./app/app.js",
           "issuerName": "./app/app.js",
           "failed": false,
@@ -215,7 +215,7 @@
           "reasons": [
             {
               "moduleId": "./app/app.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
               "module": "./app/app.js",
               "moduleName": "./app/app.js",
               "type": "harmony import",
@@ -566,22 +566,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
-          "issuerId": "./node_modules/core-js/modules/_array-methods.js",
-          "issuerName": "./node_modules/core-js/modules/_array-methods.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
+          "issuerId": "./node_modules/core-js/modules/_export.js",
+          "issuerName": "./node_modules/core-js/modules/_export.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "./node_modules/core-js/modules/_array-methods.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
-              "module": "./node_modules/core-js/modules/_array-methods.js",
-              "moduleName": "./node_modules/core-js/modules/_array-methods.js",
-              "type": "cjs require",
-              "userRequest": "./_ctx",
-              "loc": "8:10-27"
-            },
             {
               "moduleId": "./node_modules/core-js/modules/_export.js",
               "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
@@ -590,6 +581,15 @@
               "type": "cjs require",
               "userRequest": "./_ctx",
               "loc": "5:10-27"
+            },
+            {
+              "moduleId": "./node_modules/core-js/modules/_array-methods.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
+              "module": "./node_modules/core-js/modules/_array-methods.js",
+              "moduleName": "./node_modules/core-js/modules/_array-methods.js",
+              "type": "cjs require",
+              "userRequest": "./_ctx",
+              "loc": "8:10-27"
             }
           ],
           "usedExports": true,
@@ -874,15 +874,6 @@
               "loc": "3:13-33"
             },
             {
-              "moduleId": "./node_modules/core-js/modules/_shared.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
-              "module": "./node_modules/core-js/modules/_shared.js",
-              "moduleName": "./node_modules/core-js/modules/_shared.js",
-              "type": "cjs require",
-              "userRequest": "./_global",
-              "loc": "1:13-33"
-            },
-            {
               "moduleId": "./node_modules/core-js/modules/_dom-create.js",
               "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
               "module": "./node_modules/core-js/modules/_dom-create.js",
@@ -890,6 +881,15 @@
               "type": "cjs require",
               "userRequest": "./_global",
               "loc": "2:15-35"
+            },
+            {
+              "moduleId": "./node_modules/core-js/modules/_shared.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
+              "module": "./node_modules/core-js/modules/_shared.js",
+              "moduleName": "./node_modules/core-js/modules/_shared.js",
+              "type": "cjs require",
+              "userRequest": "./_global",
+              "loc": "1:13-33"
             }
           ],
           "usedExports": true,
@@ -1593,27 +1593,27 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
-          "issuerId": "./app/klondike/game.js",
-          "issuerName": "./app/klondike/game.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "issuerId": "./app/klondike/scoring.js",
+          "issuerName": "./app/klondike/scoring.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
             {
-              "moduleId": "./app/klondike/game.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
-              "module": "./app/klondike/game.js",
-              "moduleName": "./app/klondike/game.js",
+              "moduleId": "./app/klondike/scoring.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+              "module": "./app/klondike/scoring.js",
+              "moduleName": "./app/klondike/scoring.js",
               "type": "harmony import",
               "userRequest": "core-js/modules/es6.array.find",
               "loc": "1:0-40"
             },
             {
-              "moduleId": "./app/klondike/scoring.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
-              "module": "./app/klondike/scoring.js",
-              "moduleName": "./app/klondike/scoring.js",
+              "moduleId": "./app/klondike/game.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+              "module": "./app/klondike/game.js",
+              "moduleName": "./app/klondike/game.js",
               "type": "harmony import",
               "userRequest": "core-js/modules/es6.array.find",
               "loc": "1:0-40"
@@ -1640,7 +1640,7 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
           "issuerId": "./app/klondike/scoring.js",
           "issuerName": "./app/klondike/scoring.js",
           "failed": false,
@@ -1649,7 +1649,7 @@
           "reasons": [
             {
               "moduleId": "./app/klondike/scoring.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
               "module": "./app/klondike/scoring.js",
               "moduleName": "./app/klondike/scoring.js",
               "type": "harmony import",
@@ -1668,8 +1668,8 @@
       "origins": [
         {
           "moduleId": "./app/app.js",
-          "module": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "module": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "moduleName": "./app/app.js",
           "loc": "",
           "name": "main",
@@ -1681,7 +1681,7 @@
   "modules": [
     {
       "id": "./app/app.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "name": "./app/app.js",
       "index": 0,
       "index2": 37,
@@ -1709,7 +1709,7 @@
     },
     {
       "id": "./app/klondike/board.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/board.js",
       "name": "./app/klondike/board.js",
       "index": 36,
       "index2": 35,
@@ -1722,7 +1722,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1731,7 +1731,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1747,7 +1747,7 @@
     },
     {
       "id": "./app/klondike/game.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
       "name": "./app/klondike/game.js",
       "index": 37,
       "index2": 36,
@@ -1760,7 +1760,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1769,7 +1769,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1785,7 +1785,7 @@
     },
     {
       "id": "./app/klondike/klondike.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/klondike.js",
       "name": "./app/klondike/klondike.js",
       "index": 35,
       "index2": 34,
@@ -1798,7 +1798,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1807,7 +1807,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -1823,7 +1823,7 @@
     },
     {
       "id": "./app/klondike/scoring.js",
-      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+      "identifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
       "name": "./app/klondike/scoring.js",
       "index": 1,
       "index2": 33,
@@ -1836,7 +1836,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
       "issuerId": "./app/app.js",
       "issuerName": "./app/app.js",
       "failed": false,
@@ -1845,7 +1845,7 @@
       "reasons": [
         {
           "moduleId": "./app/app.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/app.js",
           "module": "./app/app.js",
           "moduleName": "./app/app.js",
           "type": "harmony import",
@@ -2196,22 +2196,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
-      "issuerId": "./node_modules/core-js/modules/_array-methods.js",
-      "issuerName": "./node_modules/core-js/modules/_array-methods.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
+      "issuerId": "./node_modules/core-js/modules/_export.js",
+      "issuerName": "./node_modules/core-js/modules/_export.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "./node_modules/core-js/modules/_array-methods.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
-          "module": "./node_modules/core-js/modules/_array-methods.js",
-          "moduleName": "./node_modules/core-js/modules/_array-methods.js",
-          "type": "cjs require",
-          "userRequest": "./_ctx",
-          "loc": "8:10-27"
-        },
         {
           "moduleId": "./node_modules/core-js/modules/_export.js",
           "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
@@ -2220,6 +2211,15 @@
           "type": "cjs require",
           "userRequest": "./_ctx",
           "loc": "5:10-27"
+        },
+        {
+          "moduleId": "./node_modules/core-js/modules/_array-methods.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
+          "module": "./node_modules/core-js/modules/_array-methods.js",
+          "moduleName": "./node_modules/core-js/modules/_array-methods.js",
+          "type": "cjs require",
+          "userRequest": "./_ctx",
+          "loc": "8:10-27"
         }
       ],
       "usedExports": true,
@@ -2504,15 +2504,6 @@
           "loc": "3:13-33"
         },
         {
-          "moduleId": "./node_modules/core-js/modules/_shared.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
-          "module": "./node_modules/core-js/modules/_shared.js",
-          "moduleName": "./node_modules/core-js/modules/_shared.js",
-          "type": "cjs require",
-          "userRequest": "./_global",
-          "loc": "1:13-33"
-        },
-        {
           "moduleId": "./node_modules/core-js/modules/_dom-create.js",
           "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
           "module": "./node_modules/core-js/modules/_dom-create.js",
@@ -2520,6 +2511,15 @@
           "type": "cjs require",
           "userRequest": "./_global",
           "loc": "2:15-35"
+        },
+        {
+          "moduleId": "./node_modules/core-js/modules/_shared.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
+          "module": "./node_modules/core-js/modules/_shared.js",
+          "moduleName": "./node_modules/core-js/modules/_shared.js",
+          "type": "cjs require",
+          "userRequest": "./_global",
+          "loc": "1:13-33"
         }
       ],
       "usedExports": true,
@@ -3223,27 +3223,27 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
-      "issuerId": "./app/klondike/game.js",
-      "issuerName": "./app/klondike/game.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+      "issuerId": "./app/klondike/scoring.js",
+      "issuerName": "./app/klondike/scoring.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
         {
-          "moduleId": "./app/klondike/game.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
-          "module": "./app/klondike/game.js",
-          "moduleName": "./app/klondike/game.js",
+          "moduleId": "./app/klondike/scoring.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "module": "./app/klondike/scoring.js",
+          "moduleName": "./app/klondike/scoring.js",
           "type": "harmony import",
           "userRequest": "core-js/modules/es6.array.find",
           "loc": "1:0-40"
         },
         {
-          "moduleId": "./app/klondike/scoring.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
-          "module": "./app/klondike/scoring.js",
-          "moduleName": "./app/klondike/scoring.js",
+          "moduleId": "./app/klondike/game.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/game.js",
+          "module": "./app/klondike/game.js",
+          "moduleName": "./app/klondike/game.js",
           "type": "harmony import",
           "userRequest": "core-js/modules/es6.array.find",
           "loc": "1:0-40"
@@ -3270,7 +3270,7 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
       "issuerId": "./app/klondike/scoring.js",
       "issuerName": "./app/klondike/scoring.js",
       "failed": false,
@@ -3279,7 +3279,7 @@
       "reasons": [
         {
           "moduleId": "./app/klondike/scoring.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-0!/Users/barendt/code/optimizing-web-apps-webpack/node_modules/babel-loader/lib/index.js!/Users/barendt/code/optimizing-web-apps-webpack/tee-loader.js??ref--0-2!/Users/barendt/code/optimizing-web-apps-webpack/app/klondike/scoring.js",
           "module": "./app/klondike/scoring.js",
           "moduleName": "./app/klondike/scoring.js",
           "type": "harmony import",
