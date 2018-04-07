@@ -23,7 +23,7 @@ Module 3 accelerating development
   * serving this from memory not dist
   * nodemon
 
-Module 4
+Module 4 - detail babel config
 env options
 named configurations
 multiple .config files are an advanced option
@@ -43,3 +43,5 @@ tool - like env. preset
 take aways
 tools: graph, size, code, build
 dont be afraid to look behind the scenes
+
+Module 6 - loaders
