@@ -78,6 +78,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__klondike_game_js__ = __webpack_require__("./app/klondike/game.js");
 // import "@babel/polyfill"
 // import "core-js/es6/promise";
+// optional way to use a loader on a single module
+// import "tee-loader!./klondike/scoring.js";
+// only run this loader
+// import "!!tee-loader!./klondike/scoring.js";
 
 
 

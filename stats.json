@@ -2,8 +2,8 @@
   "errors": [],
   "warnings": [],
   "version": "3.11.0",
-  "hash": "ca2a5edd7db53cbfb17b",
-  "time": 3645,
+  "hash": "e6996c41aa5bf18e02ce",
+  "time": 511,
   "publicPath": "/dist/",
   "assetsByChunkName": {
     "main": "app.bundle.js"
@@ -11,7 +11,7 @@
   "assets": [
     {
       "name": "app.bundle.js",
-      "size": 28970,
+      "size": 29139,
       "chunks": [
         0
       ],
@@ -39,14 +39,14 @@
       "initial": true,
       "entry": true,
       "extraAsync": false,
-      "size": 18229,
+      "size": 18398,
       "names": [
         "main"
       ],
       "files": [
         "app.bundle.js"
       ],
-      "hash": "23fac3241fe8d79739c2",
+      "hash": "62714e49a1e8ff46b68c",
       "parents": [],
       "modules": [
         {
@@ -55,7 +55,7 @@
           "name": "./app/app.js",
           "index": 0,
           "index2": 37,
-          "size": 305,
+          "size": 474,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -75,7 +75,7 @@
           "providedExports": [],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "// import \"@babel/polyfill\"\n// import \"core-js/es6/promise\";\nimport \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\"; //trigger polyfill example for promise\n// Promise.resolve(1);\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
+          "source": "// import \"@babel/polyfill\"\n// import \"core-js/es6/promise\";\n// optional way to use a loader on a single module\n// import \"tee-loader!./klondike/scoring.js\";\n// only run this loader\n// import \"!!tee-loader!./klondike/scoring.js\";\nimport \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\"; //trigger polyfill example for promise\n// Promise.resolve(1);\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
         },
         {
           "id": "./app/klondike/board.js",
@@ -106,7 +106,7 @@
               "moduleName": "./app/app.js",
               "type": "harmony import",
               "userRequest": "./klondike/board.js",
-              "loc": "5:0-29"
+              "loc": "9:0-29"
             }
           ],
           "usedExports": false,
@@ -144,7 +144,7 @@
               "moduleName": "./app/app.js",
               "type": "harmony import",
               "userRequest": "./klondike/game.js",
-              "loc": "6:0-28"
+              "loc": "10:0-28"
             }
           ],
           "usedExports": false,
@@ -182,7 +182,7 @@
               "moduleName": "./app/app.js",
               "type": "harmony import",
               "userRequest": "./klondike/klondike.js",
-              "loc": "4:0-32"
+              "loc": "8:0-32"
             }
           ],
           "usedExports": false,
@@ -220,7 +220,7 @@
               "moduleName": "./app/app.js",
               "type": "harmony import",
               "userRequest": "./klondike/scoring.js",
-              "loc": "3:0-31"
+              "loc": "7:0-31"
             }
           ],
           "usedExports": false,
@@ -566,22 +566,13 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
-          "issuerId": "./node_modules/core-js/modules/_export.js",
-          "issuerName": "./node_modules/core-js/modules/_export.js",
+          "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
+          "issuerId": "./node_modules/core-js/modules/_array-methods.js",
+          "issuerName": "./node_modules/core-js/modules/_array-methods.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "reasons": [
-            {
-              "moduleId": "./node_modules/core-js/modules/_export.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
-              "module": "./node_modules/core-js/modules/_export.js",
-              "moduleName": "./node_modules/core-js/modules/_export.js",
-              "type": "cjs require",
-              "userRequest": "./_ctx",
-              "loc": "5:10-27"
-            },
             {
               "moduleId": "./node_modules/core-js/modules/_array-methods.js",
               "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
@@ -590,6 +581,15 @@
               "type": "cjs require",
               "userRequest": "./_ctx",
               "loc": "8:10-27"
+            },
+            {
+              "moduleId": "./node_modules/core-js/modules/_export.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
+              "module": "./node_modules/core-js/modules/_export.js",
+              "moduleName": "./node_modules/core-js/modules/_export.js",
+              "type": "cjs require",
+              "userRequest": "./_ctx",
+              "loc": "5:10-27"
             }
           ],
           "usedExports": true,
@@ -874,15 +874,6 @@
               "loc": "3:13-33"
             },
             {
-              "moduleId": "./node_modules/core-js/modules/_dom-create.js",
-              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
-              "module": "./node_modules/core-js/modules/_dom-create.js",
-              "moduleName": "./node_modules/core-js/modules/_dom-create.js",
-              "type": "cjs require",
-              "userRequest": "./_global",
-              "loc": "2:15-35"
-            },
-            {
               "moduleId": "./node_modules/core-js/modules/_shared.js",
               "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
               "module": "./node_modules/core-js/modules/_shared.js",
@@ -890,6 +881,15 @@
               "type": "cjs require",
               "userRequest": "./_global",
               "loc": "1:13-33"
+            },
+            {
+              "moduleId": "./node_modules/core-js/modules/_dom-create.js",
+              "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
+              "module": "./node_modules/core-js/modules/_dom-create.js",
+              "moduleName": "./node_modules/core-js/modules/_dom-create.js",
+              "type": "cjs require",
+              "userRequest": "./_global",
+              "loc": "2:15-35"
             }
           ],
           "usedExports": true,
@@ -1685,7 +1685,7 @@
       "name": "./app/app.js",
       "index": 0,
       "index2": 37,
-      "size": 305,
+      "size": 474,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1705,7 +1705,7 @@
       "providedExports": [],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "// import \"@babel/polyfill\"\n// import \"core-js/es6/promise\";\nimport \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\"; //trigger polyfill example for promise\n// Promise.resolve(1);\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
+      "source": "// import \"@babel/polyfill\"\n// import \"core-js/es6/promise\";\n// optional way to use a loader on a single module\n// import \"tee-loader!./klondike/scoring.js\";\n// only run this loader\n// import \"!!tee-loader!./klondike/scoring.js\";\nimport \"./klondike/scoring.js\";\nimport \"./klondike/klondike.js\";\nimport \"./klondike/board.js\";\nimport \"./klondike/game.js\"; //trigger polyfill example for promise\n// Promise.resolve(1);\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);"
     },
     {
       "id": "./app/klondike/board.js",
@@ -1736,7 +1736,7 @@
           "moduleName": "./app/app.js",
           "type": "harmony import",
           "userRequest": "./klondike/board.js",
-          "loc": "5:0-29"
+          "loc": "9:0-29"
         }
       ],
       "usedExports": false,
@@ -1774,7 +1774,7 @@
           "moduleName": "./app/app.js",
           "type": "harmony import",
           "userRequest": "./klondike/game.js",
-          "loc": "6:0-28"
+          "loc": "10:0-28"
         }
       ],
       "usedExports": false,
@@ -1812,7 +1812,7 @@
           "moduleName": "./app/app.js",
           "type": "harmony import",
           "userRequest": "./klondike/klondike.js",
-          "loc": "4:0-32"
+          "loc": "8:0-32"
         }
       ],
       "usedExports": false,
@@ -1850,7 +1850,7 @@
           "moduleName": "./app/app.js",
           "type": "harmony import",
           "userRequest": "./klondike/scoring.js",
-          "loc": "3:0-31"
+          "loc": "7:0-31"
         }
       ],
       "usedExports": false,
@@ -2196,22 +2196,13 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
-      "issuerId": "./node_modules/core-js/modules/_export.js",
-      "issuerName": "./node_modules/core-js/modules/_export.js",
+      "issuer": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
+      "issuerId": "./node_modules/core-js/modules/_array-methods.js",
+      "issuerName": "./node_modules/core-js/modules/_array-methods.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "reasons": [
-        {
-          "moduleId": "./node_modules/core-js/modules/_export.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
-          "module": "./node_modules/core-js/modules/_export.js",
-          "moduleName": "./node_modules/core-js/modules/_export.js",
-          "type": "cjs require",
-          "userRequest": "./_ctx",
-          "loc": "5:10-27"
-        },
         {
           "moduleId": "./node_modules/core-js/modules/_array-methods.js",
           "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_array-methods.js",
@@ -2220,6 +2211,15 @@
           "type": "cjs require",
           "userRequest": "./_ctx",
           "loc": "8:10-27"
+        },
+        {
+          "moduleId": "./node_modules/core-js/modules/_export.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_export.js",
+          "module": "./node_modules/core-js/modules/_export.js",
+          "moduleName": "./node_modules/core-js/modules/_export.js",
+          "type": "cjs require",
+          "userRequest": "./_ctx",
+          "loc": "5:10-27"
         }
       ],
       "usedExports": true,
@@ -2504,15 +2504,6 @@
           "loc": "3:13-33"
         },
         {
-          "moduleId": "./node_modules/core-js/modules/_dom-create.js",
-          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
-          "module": "./node_modules/core-js/modules/_dom-create.js",
-          "moduleName": "./node_modules/core-js/modules/_dom-create.js",
-          "type": "cjs require",
-          "userRequest": "./_global",
-          "loc": "2:15-35"
-        },
-        {
           "moduleId": "./node_modules/core-js/modules/_shared.js",
           "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_shared.js",
           "module": "./node_modules/core-js/modules/_shared.js",
@@ -2520,6 +2511,15 @@
           "type": "cjs require",
           "userRequest": "./_global",
           "loc": "1:13-33"
+        },
+        {
+          "moduleId": "./node_modules/core-js/modules/_dom-create.js",
+          "moduleIdentifier": "/Users/barendt/code/optimizing-web-apps-webpack/node_modules/core-js/modules/_dom-create.js",
+          "module": "./node_modules/core-js/modules/_dom-create.js",
+          "moduleName": "./node_modules/core-js/modules/_dom-create.js",
+          "type": "cjs require",
+          "userRequest": "./_global",
+          "loc": "2:15-35"
         }
       ],
       "usedExports": true,
